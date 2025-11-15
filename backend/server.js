@@ -2,8 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const connectDB = require("./config/db");
-const taskRoutes = require("./routes/taskRoutes");
-const errorHandler = require("./middleware/errorMiddleware");
+const taskRoutes = require("./routes/Routes");
+const errorHandler = require("./middleware/middle");
 
 const app = express();
 app.use(cors());
